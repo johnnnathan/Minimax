@@ -1,7 +1,7 @@
 player_symbol = "X"
 ai_symbol = "O"
 
-main_board = [["X",1,2],
+main_board = [["X","X",2],
               [3,4,5],
               [6,7,8]] 
 
@@ -11,7 +11,6 @@ def print_board():
     for row in main_board:
         print(row)
 
-print_board()
 
 def finished_party(board, is_ai):
     symbol = ai_symbol if is_ai else player_symbol
@@ -35,7 +34,6 @@ def finished_party(board, is_ai):
 def finished(board):
     return finished_party(board, False)  or finished_party(board, True)
 
-print(finished(main_board))
 
 def get_input():
     while True:
@@ -45,10 +43,8 @@ def get_input():
             if result < 9 and result > -1:
                 row = int(result / 3)
                 col = result % 3 
-                print(row)
-                print(col)
                 if main_board[row][col] != "X" and main_board[row][col] != "O":
-                    return result
+                    return result, row, col
                 else:
                     print("Position already occupied")
             else:
@@ -56,7 +52,9 @@ def get_input():
         except ValueError:
             print("Invalid value, please try again")
 
-# def act_player():
+def act_player():
+    move , row, col = get_input()
+    main_board[row][col] = player_symbol
 
 
 def act(who):
@@ -75,10 +73,10 @@ def play(starter):
         player1 = ai_symbol
         player2 = player_symbol
 
-    print("hello")
+    while not finished(main_board):
+        print_board()
+        act(player1)
+        act(player2)
         
 
-
-get_input()
-play("X")
 
