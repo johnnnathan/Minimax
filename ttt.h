@@ -1,8 +1,8 @@
 #ifndef TTT_H
 #define TTT_H
 
-const char ai_symbol = 'O';
-const char player_symbol = 'X';
+const char aiSymbol = 'O';
+const char playerSymbol = 'X';
 
 struct tttBoard{
   char board[3][3];
