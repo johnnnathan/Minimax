@@ -13,7 +13,12 @@
 
 
 #include "ttt.h"
+#include <cstdio>
+#include <iomanip>
+#include <iostream>
 #include <stdio.h>
+#include <random>
+#include <chrono>
 
 #define MAX 1000
 #define MIN -1000
@@ -21,6 +26,35 @@
 // Function prototypes for minimax and actAI
 int minimax(struct tttBoard* board, int depth, int isMax);
 int bestMove(struct tttBoard* board);
+
+
+
+int randomMove(struct tttBoard* board){
+  std::random_device rd; // Seed
+  std::mt19937 gen(rd()); // Mersenne Twister generator
+
+  // Define the range
+  int min = 0;
+  int max = 8;
+
+  // Create a uniform distribution
+  std::uniform_int_distribution<> dis(min, max);
+
+  // Generate a random number in the range [min, max]
+  while (true){
+    int randomNumber = dis(gen);
+    int row = randomNumber / 3;
+    int col = randomNumber % 3;
+    if (board->board[row][col] == '-'){
+      board->board[row][col] = playerSymbol;
+      return 0;
+    }
+  }
+
+  
+
+
+}
 
 
 
@@ -112,8 +146,17 @@ int finished(struct tttBoard* board){
   int flagUser = finishedParty(board, 0);
   int flagAI = finishedParty(board,1);
   int flagFull = boardFilled(board);
-  if (flagUser == 1 || flagAI == 1 || flagFull == 1){
+  if (flagUser == 1){
+    printf("Player won\n");
     return 1;
+  } 
+  if(flagAI == 1){
+    printf("Minimax won\n");
+    return 2;
+  } 
+  if (flagFull == 1){
+    printf("Draw\n");
+    return 3;
   }
   return 0;
 }
@@ -128,7 +171,7 @@ void actAI(struct tttBoard* board) {
 
 int act(struct tttBoard* board, char who){
   if (who == playerSymbol){
-    getInput(board);
+    randomMove(board);
     return 0;
   }
   actAI(board);
@@ -204,23 +247,30 @@ int play(struct tttBoard* board, char starter){
     player2 = playerSymbol;
   }
 
+  int finishedCode = 0;
+
+  finishedCode = finished(board);
+
 
 
   printBoard(board);
-  while (!finished(board)) {
+  while (!finishedCode) {
     printf("Player 1:\n");
     act(board, player1);
-    if (finished(board)) {
+    finishedCode = finished(board);
+    if (finishedCode != 0){
       printBoard(board);  // Print final state before exiting
-      return 0;            // End the game if Player 1 (or AI in swapped role) finishes the game
+      return finishedCode;            // End the game if Player 1 (or AI in swapped role) finishes the game
     }
 
     printBoard(board);       // Show the board after Player 1's move
 
+    printf("Player 2: \n");
     act(board, player2);     // AI or Player 2's turn
-    if (finished(board)) {
+    finishedCode = finished(board);
+    if (finishedCode != 0) {
       printBoard(board);  // Print final state before exiting
-      return 0;            // End the game if AI (or Player 2) finishes the game
+      return finishedCode;            // End the game if AI (or Player 2) finishes the game
     }
 
     printBoard(board);       // Show the board after AI's move
@@ -235,7 +285,35 @@ int main(){
 
   initBoard(&ttt);
 
-  play(&ttt, playerSymbol);
+  auto start_time = std::chrono::high_resolution_clock::now();
+
+  int player_tally = 0;
+  int ai_tally = 0;
+  int draw_tally = 0;
+
+  for (int i = 0; i < 50; i ++){
+    int result = play(&ttt, aiSymbol);
+    if (result == 1){
+      player_tally += 1;
+    }else if (result == 2) {
+      ai_tally += 1;
+    }
+    else if (result == 3){
+      draw_tally += 1;
+    }
+    initBoard(&ttt);
+  }
+
+
+    auto end_time = std::chrono::high_resolution_clock::now();
+    std::chrono::duration<double> duration = end_time - start_time;
+
+    // Logging results
+    std::cout << "Results after 50 games:\n";
+    std::cout << "Player Wins: " << player_tally << "\n";
+    std::cout << "AI Wins: " << ai_tally << "\n";
+    std::cout << "Draws: " << draw_tally << "\n";
+    std::cout << "Time taken: " << std::fixed << std::setprecision(3) << duration.count() << " seconds\n";
   return 0;
 }
 

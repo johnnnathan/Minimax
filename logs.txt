@@ -1,0 +1,334 @@
+Set 1:
+
+AI wins!
+AI wins!
+Game set 1 completed
+AI wins!
+AI wins!
+Game set 2 completed
+AI wins!
+AI wins!
+Game set 3 completed
+AI wins!
+AI wins!
+Game set 4 completed
+AI wins!
+AI wins!
+Game set 5 completed
+AI wins!
+AI wins!
+Game set 6 completed
+AI wins!
+It's a draw!
+Game set 7 completed
+AI wins!
+It's a draw!
+Game set 8 completed
+AI wins!
+AI wins!
+Game set 9 completed
+AI wins!
+AI wins!
+Game set 10 completed
+AI wins!
+It's a draw!
+Game set 11 completed
+AI wins!
+AI wins!
+Game set 12 completed
+AI wins!
+AI wins!
+Game set 13 completed
+AI wins!
+AI wins!
+Game set 14 completed
+AI wins!
+AI wins!
+Game set 15 completed
+AI wins!
+AI wins!
+Game set 16 completed
+AI wins!
+It's a draw!
+Game set 17 completed
+AI wins!
+AI wins!
+Game set 18 completed
+AI wins!
+AI wins!
+Game set 19 completed
+AI wins!
+AI wins!
+Game set 20 completed
+AI wins!
+AI wins!
+Game set 21 completed
+AI wins!
+AI wins!
+Game set 22 completed
+AI wins!
+AI wins!
+Game set 23 completed
+AI wins!
+AI wins!
+Game set 24 completed
+AI wins!
+AI wins!
+Game set 25 completed
+Time: 74.96 seconds
+Random: 0
+Minimax: 46
+Draw: 4
+
+
+Set 2:
+
+AI wins!
+It's a draw!
+Game set 1 completed
+AI wins!
+It's a draw!
+Game set 2 completed
+AI wins!
+AI wins!
+Game set 3 completed
+AI wins!
+AI wins!
+Game set 4 completed
+AI wins!
+AI wins!
+Game set 5 completed
+AI wins!
+AI wins!
+Game set 6 completed
+AI wins!
+AI wins!
+Game set 7 completed
+AI wins!
+AI wins!
+Game set 8 completed
+AI wins!
+AI wins!
+Game set 9 completed
+AI wins!
+AI wins!
+Game set 10 completed
+AI wins!
+It's a draw!
+Game set 11 completed
+AI wins!
+It's a draw!
+Game set 12 completed
+AI wins!
+It's a draw!
+Game set 13 completed
+AI wins!
+It's a draw!
+Game set 14 completed
+AI wins!
+AI wins!
+Game set 15 completed
+AI wins!
+It's a draw!
+Game set 16 completed
+AI wins!
+AI wins!
+Game set 17 completed
+AI wins!
+AI wins!
+Game set 18 completed
+AI wins!
+AI wins!
+Game set 19 completed
+AI wins!
+AI wins!
+Game set 20 completed
+AI wins!
+AI wins!
+Game set 21 completed
+AI wins!
+AI wins!
+Game set 22 completed
+AI wins!
+AI wins!
+Game set 23 completed
+AI wins!
+AI wins!
+Game set 24 completed
+AI wins!
+AI wins!
+Game set 25 completed
+Time: 74.45 seconds
+Random: 0
+Minimax: 43
+Draw: 7
+
+Set 3:
+
+AI wins!
+It's a draw!
+Game set 1 completed
+AI wins!
+AI wins!
+Game set 2 completed
+AI wins!
+AI wins!
+Game set 3 completed
+AI wins!
+AI wins!
+Game set 4 completed
+AI wins!
+AI wins!
+Game set 5 completed
+AI wins!
+AI wins!
+Game set 6 completed
+AI wins!
+AI wins!
+Game set 7 completed
+AI wins!
+AI wins!
+Game set 8 completed
+AI wins!
+It's a draw!
+Game set 9 completed
+AI wins!
+It's a draw!
+Game set 10 completed
+AI wins!
+AI wins!
+Game set 11 completed
+AI wins!
+It's a draw!
+Game set 12 completed
+AI wins!
+AI wins!
+Game set 13 completed
+AI wins!
+AI wins!
+Game set 14 completed
+AI wins!
+AI wins!
+Game set 15 completed
+AI wins!
+AI wins!
+Game set 16 completed
+AI wins!
+AI wins!
+Game set 17 completed
+AI wins!
+It's a draw!
+Game set 18 completed
+AI wins!
+AI wins!
+Game set 19 completed
+AI wins!
+AI wins!
+Game set 20 completed
+AI wins!
+AI wins!
+Game set 21 completed
+AI wins!
+It's a draw!
+Game set 22 completed
+AI wins!
+AI wins!
+Game set 23 completed
+AI wins!
+AI wins!
+Game set 24 completed
+AI wins!
+AI wins!
+Game set 25 completed
+Time: 73.89 seconds
+Random: 0
+Minimax: 44
+Draw: 6
+
+
+
+Set 4:
+
+
+AI wins!
+AI wins!
+Game set 1 completed
+AI wins!
+AI wins!
+Game set 2 completed
+AI wins!
+AI wins!
+Game set 3 completed
+AI wins!
+It's a draw!
+Game set 4 completed
+AI wins!
+AI wins!
+Game set 5 completed
+AI wins!
+AI wins!
+Game set 6 completed
+AI wins!
+AI wins!
+Game set 7 completed
+AI wins!
+It's a draw!
+Game set 8 completed
+AI wins!
+AI wins!
+Game set 9 completed
+AI wins!
+It's a draw!
+Game set 10 completed
+AI wins!
+AI wins!
+Game set 11 completed
+AI wins!
+It's a draw!
+Game set 12 completed
+AI wins!
+AI wins!
+Game set 13 completed
+AI wins!
+AI wins!
+Game set 14 completed
+AI wins!
+AI wins!
+Game set 15 completed
+AI wins!
+AI wins!
+Game set 16 completed
+AI wins!
+AI wins!
+Game set 17 completed
+AI wins!
+AI wins!
+Game set 18 completed
+AI wins!
+It's a draw!
+Game set 19 completed
+AI wins!
+AI wins!
+Game set 20 completed
+AI wins!
+AI wins!
+Game set 21 completed
+AI wins!
+It's a draw!
+Game set 22 completed
+AI wins!
+AI wins!
+Game set 23 completed
+AI wins!
+AI wins!
+Game set 24 completed
+AI wins!
+AI wins!
+Game set 25 completed
+Time: 70.46 seconds
+Random: 0
+Minimax: 44
+Draw: 6
+
+
+
